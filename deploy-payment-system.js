@@ -25,21 +25,24 @@ class PaymentSystemDeployer {
       {
         id: 'starter',
         name: 'MetisAI Starter',
-        price: 297,
+        price: 891, // 297 * 3 = 891 (200% increase)
+        originalPrice: 297,
         description: 'Perfect for small businesses and individual agents',
         features: ['1 AI Persona', '1,000 leads/month', '500 AI calls/month', 'Basic analytics']
       },
       {
         id: 'professional',
         name: 'MetisAI Professional',
-        price: 997,
+        price: 2991, // 997 * 3 = 2991 (200% increase)
+        originalPrice: 997,
         description: 'Ideal for growing businesses and sales teams',
         features: ['3 AI Personas', '5,000 leads/month', '2,500 AI calls/month', 'Advanced analytics']
       },
       {
         id: 'enterprise',
         name: 'MetisAI Enterprise',
-        price: 2997,
+        price: 8991, // 2997 * 3 = 8991 (200% increase)
+        originalPrice: 2997,
         description: 'For large organizations and multi-industry operations',
         features: ['10 AI Personas', '25,000 leads/month', '12,500 AI calls/month', 'Premium analytics']
       }
@@ -169,6 +172,16 @@ class PaymentSystemDeployer {
           'Retail': 1.0,
           'Aviation': 2.5,
           'Energy & Utilities': 3.0
+        },
+        revenueProjections: {
+          totalPotentialValue: 732000000000, // $732 billion (244B * 3)
+          estimatedAnnualRevenue: 108000000000, // $108 billion (36B * 3)
+          monthlyTargets: {
+            month1: 5400000000, // $5.4B
+            month3: 16500000000, // $16.5B
+            month6: 38400000000, // $38.4B
+            month12: 77100000000 // $77.1B
+          }
         }
       }
     };
@@ -201,9 +214,9 @@ class PaymentSystemDeployer {
     }));
 
     // In a real deployment, this would create actual Stripe products
-    console.log('   📦 Stripe Products to be created:');
+    console.log('   📦 Stripe Products to be created (TRIPLED PRICING):');
     stripeProducts.forEach(product => {
-      console.log(`     - ${product.name}: $${product.price}/month`);
+      console.log(`     - ${product.name}: $${product.price}/month (was $${product.originalPrice})`);
     });
 
     console.log('   ✅ Stripe products configured');
@@ -226,9 +239,9 @@ class PaymentSystemDeployer {
     }));
 
     // In a real deployment, this would create actual PayPal plans
-    console.log('   📦 PayPal Plans to be created:');
+    console.log('   📦 PayPal Plans to be created (TRIPLED PRICING):');
     paypalPlans.forEach(plan => {
-      console.log(`     - ${plan.name}: $${plan.price}/month`);
+      console.log(`     - ${plan.name}: $${plan.price}/month (was $${plan.originalPrice})`);
     });
 
     console.log('   ✅ PayPal plans configured');
@@ -376,9 +389,9 @@ class PaymentSystemDeployer {
     console.log('   ✅ Bank Transfer (Wire transfers)');
     console.log('   ✅ Check Payment (Traditional payments)');
 
-    console.log('\n💰 Pricing Tiers Available:');
+    console.log('\n💰 Pricing Tiers Available (TRIPLED PRICING):');
     this.pricingTiers.forEach(tier => {
-      console.log(`   💎 ${tier.name}: $${tier.price}/month`);
+      console.log(`   💎 ${tier.name}: $${tier.price}/month (was $${tier.originalPrice}) - 200% INCREASE`);
     });
 
     console.log('\n🏭 Industry Coverage:');
@@ -386,10 +399,11 @@ class PaymentSystemDeployer {
     console.log('   🎯 Industry-specific multipliers (1.0x - 3.0x)');
     console.log('   💼 Enterprise custom pricing available');
 
-    console.log('\n🚀 Revenue Potential:');
-    console.log('   💵 $36+ billion annual revenue potential');
+    console.log('\n🚀 Revenue Potential (TRIPLED):');
+    console.log('   💵 $108+ billion annual revenue potential (was $36B)');
     console.log('   📈 15% average conversion rate across industries');
     console.log('   🎯 5.2+ million leads ready for monetization');
+    console.log('   💰 $732+ billion total market value (was $244B)');
 
     console.log('\n⚠️  Required Actions for Production:');
     console.log('   1. Provide Stripe secret key and webhook secret');
