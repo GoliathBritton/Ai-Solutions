@@ -1,5 +1,4 @@
-/**
- * Web3 Maximization Framework
+/** * Web3 Maximization Framework
  * Maximizes Web3 capabilities with decentralized storage and verification
  * @author MetisAI Team
  */
