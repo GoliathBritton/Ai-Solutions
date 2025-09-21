@@ -6,6 +6,9 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  experimental: {
+    serverComponentsExternalPackages: ['@supabase/ssr'],
+  },
   images: {
     domains: [
       'localhost',
