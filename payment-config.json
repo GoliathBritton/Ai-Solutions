@@ -1,0 +1,71 @@
+{
+  "stripe": {
+    "publishableKey": "pk_live_51RRxKJIBjkVTRTABnqeJXU74UTxWoBzSByXS0Nsidf4O40LqfzB2uQjDtr02OMGRSzxyXM9OGhpf83oQ8SF3jDvA00r1R1AmrR",
+    "secretKey": "sk_live_YOUR_STRIPE_SECRET_KEY_HERE",
+    "webhookSecret": "whsec_YOUR_STRIPE_WEBHOOK_SECRET_HERE",
+    "currency": "usd",
+    "mode": "live"
+  },
+  "paypal": {
+    "clientId": "ARbHoAvcE25ruW5AoK414FTnkW_ufJWWiPwPgHyyU7ypOyDLIRKvNpoaEOGyV4j8U6Wxvtk-3OjA-LxK",
+    "clientSecret": "ARbHoAvcE25ruW5AoK414FTnkW_ufJWWiPwPgHyyU7ypOyDLIRKvNpoaEOGyV4j8U6Wxvtk-3OjA-LxK",
+    "businessEmail": "sb-dgk9m29775091@business.example.com",
+    "currency": "USD",
+    "mode": "sandbox"
+  },
+  "flyToken": {
+    "contractAddress": "0x...",
+    "discountPercentage": 20,
+    "stakingRewards": 12,
+    "governanceEnabled": true
+  },
+  "pricing": {
+    "tiers": [
+      {
+        "id": "starter",
+        "name": "MetisAI Starter",
+        "price": 297,
+        "description": "Perfect for small businesses and individual agents",
+        "features": [
+          "1 AI Persona",
+          "1,000 leads/month",
+          "500 AI calls/month",
+          "Basic analytics"
+        ]
+      },
+      {
+        "id": "professional",
+        "name": "MetisAI Professional",
+        "price": 997,
+        "description": "Ideal for growing businesses and sales teams",
+        "features": [
+          "3 AI Personas",
+          "5,000 leads/month",
+          "2,500 AI calls/month",
+          "Advanced analytics"
+        ]
+      },
+      {
+        "id": "enterprise",
+        "name": "MetisAI Enterprise",
+        "price": 2997,
+        "description": "For large organizations and multi-industry operations",
+        "features": [
+          "10 AI Personas",
+          "25,000 leads/month",
+          "12,500 AI calls/month",
+          "Premium analytics"
+        ]
+      }
+    ],
+    "industryMultipliers": {
+      "Real Estate": 1,
+      "Healthcare": 1.5,
+      "Banking": 2,
+      "Construction": 1.2,
+      "Retail": 1,
+      "Aviation": 2.5,
+      "Energy & Utilities": 3
+    }
+  }
+}
