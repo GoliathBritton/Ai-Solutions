@@ -1,0 +1,6 @@
+{
+  "googleAnalytics": "GA-XXXXXXXXX",
+  "mixpanel": "mp-XXXXXXXXX",
+  "datadog": "dd-XXXXXXXXX",
+  "sentry": "https://XXXXXXXXX@sentry.io/XXXXXXXXX"
+}

@@ -1,0 +1,18 @@
+{
+  "domain": "metisai.tech",
+  "platform": "nuco.cloud",
+  "environment": "production",
+  "version": "1.0.0",
+  "timestamp": "2025-09-17T08:31:47.790Z",
+  "features": {
+    "quantum": true,
+    "dynex": true,
+    "social": true,
+    "payments": true,
+    "analytics": true,
+    "web3": true,
+    "crypto": true,
+    "tor": true,
+    "verification": true
+  }
+}

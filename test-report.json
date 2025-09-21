@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-09-17T08:29:25.716Z",
+  "summary": {
+    "total": 7,
+    "passed": 5,
+    "failed": 2,
+    "warnings": 1,
+    "successRate": "71.43%"
+  },
+  "tests": [
+    {
+      "name": "Environment Variables",
+      "status": "FAILED",
+      "error": "Missing required environment variable: NEXT_PUBLIC_SUPABASE_URL"
+    },
+    {
+      "name": "Package Dependencies",
+      "status": "PASSED"
+    },
+    {
+      "name": "TypeScript Compilation",
+      "status": "FAILED",
+      "error": "TypeScript compilation failed"
+    },
+    {
+      "name": "ESLint",
+      "status": "PASSED"
+    },
+    {
+      "name": "File Structure",
+      "status": "PASSED"
+    },
+    {
+      "name": "API Routes",
+      "status": "PASSED"
+    },
+    {
+      "name": "Smart Contract ABIs",
+      "status": "PASSED"
+    }
+  ]
+}
